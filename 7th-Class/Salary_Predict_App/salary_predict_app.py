@@ -2,8 +2,10 @@ import streamlit as st
 import pickle
 import numpy as np
 
-# Load the trained model
-with open("salary_model.pkl", "rb") as model_file:
+base_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(base_dir, "salary_model.pkl")
+
+with open(model_path, "rb") as model_file:
     model = pickle.load(model_file)
 
 # Streamlit App
