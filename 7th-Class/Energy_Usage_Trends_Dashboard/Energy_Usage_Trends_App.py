@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.metrics import mean_squared_error, r2_score, accuracy_score, confusion_matrix, classification_report
 import streamlit as st
 
-df = pd.read_csv("owid-energy-data.csv")
+df = pd.read_csv("7th-Class/Energy_Usage_Trends_Dashboard/owid-energy-data.csv")
 # Display column names to check the correct column name for energy consumption
 st.write("Dataset Columns:", df.columns.tolist())
 
