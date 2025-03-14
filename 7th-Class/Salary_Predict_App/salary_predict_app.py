@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-
+import os
 base_dir = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(base_dir, "salary_model.pkl")
 
