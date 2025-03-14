@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 def load_model():
-    with open("churn_model.pkl", "rb") as file:
+    with open("7th-Class/Customer_Churn_Alert_App/churn_model.pkl", "rb") as file:
         model = pickle.load(file)
     return model
 
@@ -34,7 +34,7 @@ def preprocess_input(user_input):
 
 
 def load_feature_names():
-    with open("churn_feature_names.pkl", "rb") as file:
+    with open("7th-Class/Customer_Churn_Alert_App/churn_feature_names.pkl", "rb") as file:
         feature_names = pickle.load(file)
     return feature_names
 
